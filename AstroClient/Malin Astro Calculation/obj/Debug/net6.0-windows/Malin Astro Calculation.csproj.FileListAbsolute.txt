@@ -1,0 +1,7 @@
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\Malin Astro Calculation\obj\Debug\net6.0-windows\Malin Astro Calculation.csproj.AssemblyReference.cache
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\Malin Astro Calculation\obj\Debug\net6.0-windows\Malin_Astro_Calculation.Form1.resources
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\Malin Astro Calculation\obj\Debug\net6.0-windows\Malin Astro Calculation.csproj.GenerateResource.cache
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\Malin Astro Calculation\obj\Debug\net6.0-windows\Malin Astro Calculation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\Malin Astro Calculation\obj\Debug\net6.0-windows\Malin Astro Calculation.AssemblyInfoInputs.cache
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\Malin Astro Calculation\obj\Debug\net6.0-windows\Malin Astro Calculation.AssemblyInfo.cs
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\Malin Astro Calculation\obj\Debug\net6.0-windows\Malin Astro Calculation.csproj.CoreCompileInputs.cache
