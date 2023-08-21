@@ -1,0 +1,6 @@
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\AstroMath\AstroMath\bin\Release\AstroMath.dll
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\AstroMath\AstroMath\bin\Release\AstroMath.pdb
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\AstroMath\AstroMath\obj\Release\AstroMath.csproj.AssemblyReference.cache
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\AstroMath\AstroMath\obj\Release\AstroMath.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\AstroMath\AstroMath\obj\Release\AstroMath.dll
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\AstroMath\AstroMath\obj\Release\AstroMath.pdb

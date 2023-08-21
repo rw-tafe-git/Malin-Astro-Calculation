@@ -1,0 +1,9 @@
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\AstroServer\AstroServer\bin\Debug\AstroServer.exe.config
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\AstroServer\AstroServer\bin\Debug\AstroServer.exe
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\AstroServer\AstroServer\bin\Debug\AstroServer.pdb
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\AstroServer\AstroServer\bin\Debug\AstroMath.dll
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\AstroServer\AstroServer\obj\Debug\AstroServer.csproj.AssemblyReference.cache
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\AstroServer\AstroServer\obj\Debug\AstroServer.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\AstroServer\AstroServer\obj\Debug\AstroServer.csproj.CopyComplete
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\AstroServer\AstroServer\obj\Debug\AstroServer.exe
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\AstroServer\AstroServer\obj\Debug\AstroServer.pdb

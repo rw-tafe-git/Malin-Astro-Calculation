@@ -1,6 +1,0 @@
-C:\Users\Administrator\Source\Repos\Malin Data Processing\AstroMath\AstroMath\bin\Debug\AstroMath.dll
-C:\Users\Administrator\Source\Repos\Malin Data Processing\AstroMath\AstroMath\bin\Debug\AstroMath.pdb
-C:\Users\Administrator\Source\Repos\Malin Data Processing\AstroMath\AstroMath\obj\Debug\AstroMath.csproj.AssemblyReference.cache
-C:\Users\Administrator\Source\Repos\Malin Data Processing\AstroMath\AstroMath\obj\Debug\AstroMath.csproj.CoreCompileInputs.cache
-C:\Users\Administrator\Source\Repos\Malin Data Processing\AstroMath\AstroMath\obj\Debug\AstroMath.dll
-C:\Users\Administrator\Source\Repos\Malin Data Processing\AstroMath\AstroMath\obj\Debug\AstroMath.pdb
