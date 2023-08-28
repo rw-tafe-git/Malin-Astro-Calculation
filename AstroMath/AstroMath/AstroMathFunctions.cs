@@ -10,30 +10,33 @@ namespace AstroMath
     {
         public double StarVelocity(double observedWaveLength, double restWaveLength)
         {
-            double changeInWaveLength =  observedWaveLength - restWaveLength;
-            double speedOfLight = 2.99792458;
+            double c = 2.99792458 * Math.Pow(10, 8);
+            double waveLengthChange = observedWaveLength - restWaveLength;
+			double result = Math.Round(c * (waveLengthChange / restWaveLength), 4);
 
-            return 0;
+            return result;
         }
         public double StarDistance(double arcsecondsAngle)
         {
-            double parallaxAngle = 0;
-            double distance = 1 / parallaxAngle;
+            double result = 1 / arcsecondsAngle;
 
-            return distance;
+            return result;
         }
         public double TemperatureInKelvin(double celsius)
         {
-            double kelvin = celsius + 273;
+            double result = celsius + 273;
 
-            return kelvin;
+            return result;
         }
         public double EventHorizon(double blackHoleMass)
         {
-            double gravityConstant = 0;
-            double speedOfLight = 0;
-
-            return 0;
+            double c = (2.99792458 * Math.Pow(10, 8));
+			double lightSpeedSquared = Math.Pow(c, 2.0);
+			double gravity = 6.674 * Math.Pow(10, -11);
+			double calcl = (2 * gravity * blackHoleMass);
+			double result = calcl / lightSpeedSquared;
+			
+			return result;
         }
     }
 }

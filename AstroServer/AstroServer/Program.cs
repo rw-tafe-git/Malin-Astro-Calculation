@@ -14,7 +14,14 @@ namespace AstroServer
         {
             AstroMathFunctions mathfunctions = new AstroMathFunctions();
 
-            Console.WriteLine(mathfunctions.StarVelocity(0, 0));
+            Console.WriteLine(mathfunctions.StarVelocity(500.1f, 500));
+
+            Console.WriteLine(mathfunctions.StarDistance(0.547f, 1.83f));
+
+            //Console.WriteLine(mathfunctions.StarVelocity(500.1f, 500));
+
+            //Console.WriteLine(mathfunctions.StarVelocity(500.1f, 500));
+
             Console.ReadLine();
         }
     }
