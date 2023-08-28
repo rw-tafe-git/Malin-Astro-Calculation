@@ -9,6 +9,6 @@ namespace AstroServer
 {
     internal interface IAstroContract
     {
-        AstroMathFunctions mathfunctions = new AstroMathFunctions();
+        
     }
 }

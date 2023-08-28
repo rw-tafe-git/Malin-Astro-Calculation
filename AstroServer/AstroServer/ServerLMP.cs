@@ -11,6 +11,21 @@ namespace AstroServer
     {
         AstroMathFunctions mathfunctions = new AstroMathFunctions();
 
-
+        public double StarVelocity(double observedWaveLength, double restWaveLength)
+        {
+            return StarVelocity(observedWaveLength, restWaveLength);
+        }
+        public double StarDistance(double arcsecondsAngle)
+        {
+            return StarDistance(arcsecondsAngle);
+        }
+        public double TemperatureInKelvin(double celsius)
+        {
+            return TemperatureInKelvin(celsius);
+        }
+        public double EventHorizon(double blackHoleMass)
+        {
+            return EventHorizon(blackHoleMass);
+        }
     }
 }
