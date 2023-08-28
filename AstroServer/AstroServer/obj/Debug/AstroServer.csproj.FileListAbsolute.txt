@@ -7,3 +7,5 @@ C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\AstroServer\AstroSer
 C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\AstroServer\AstroServer\obj\Debug\AstroServer.csproj.CopyComplete
 C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\AstroServer\AstroServer\obj\Debug\AstroServer.exe
 C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\AstroServer\AstroServer\obj\Debug\AstroServer.pdb
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\AstroServer\AstroServer\bin\Debug\System.ServiceModel.Primitives.dll
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\AstroServer\AstroServer\bin\Debug\System.ServiceModel.Primitives.pdb
