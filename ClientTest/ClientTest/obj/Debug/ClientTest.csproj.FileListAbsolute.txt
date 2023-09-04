@@ -1,0 +1,7 @@
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\ClientTest\ClientTest\bin\Debug\ClientTest.exe.config
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\ClientTest\ClientTest\bin\Debug\ClientTest.exe
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\ClientTest\ClientTest\bin\Debug\ClientTest.pdb
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\ClientTest\ClientTest\obj\Debug\ClientTest.csproj.AssemblyReference.cache
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\ClientTest\ClientTest\obj\Debug\ClientTest.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\ClientTest\ClientTest\obj\Debug\ClientTest.exe
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\ClientTest\ClientTest\obj\Debug\ClientTest.pdb

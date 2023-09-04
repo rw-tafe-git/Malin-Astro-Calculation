@@ -9,26 +9,20 @@ using AstroMath;
 
 namespace AstroServer
 {
-    
     internal class Program
     {
         static void Main(string[] args)
         {
-            string address = "net.pipe://localhost/pipemynumbers";
+            string address = "net.pipe://localhost/pipespacemaths";
+
+            ServiceHost serviceHost = new ServiceHost(typeof(ServerLMP));
             NetNamedPipeBinding binding = new NetNamedPipeBinding(NetNamedPipeSecurityMode.None);
-            EndpointAddress ep = new EndpointAddress(address);
-            IAstroContract channel = ChannelFactory<IAstroContract>.CreateChannel(binding, ep);
+            serviceHost.AddServiceEndpoint(typeof(IAstroContract), binding, address);
+            serviceHost.Open();
 
             AstroMathFunctions mathfunctions = new AstroMathFunctions();
 
-            // Example test functions
-            Console.WriteLine(mathfunctions.StarVelocity(500.1f, 500));
-
-            Console.WriteLine(mathfunctions.StarDistance(0.547f));
-
-            Console.WriteLine(mathfunctions.TemperatureInKelvin(27));
-
-            Console.WriteLine(mathfunctions.EventHorizon(8.2 * Math.Pow(10, 36)));
+            Console.WriteLine("Server started");
 
             Console.ReadLine();
         }

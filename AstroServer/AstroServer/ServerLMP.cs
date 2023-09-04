@@ -15,19 +15,19 @@ namespace AstroServer
 
         public double StarVelocity(double observedWaveLength, double restWaveLength)
         {
-            return StarVelocity(observedWaveLength, restWaveLength);
+            return mathfunctions.StarVelocity(observedWaveLength, restWaveLength);
         }
         public double StarDistance(double arcsecondsAngle)
         {
-            return StarDistance(arcsecondsAngle);
+            return mathfunctions.StarDistance(arcsecondsAngle);
         }
         public double TemperatureInKelvin(double celsius)
         {
-            return TemperatureInKelvin(celsius);
+            return mathfunctions.TemperatureInKelvin(celsius);
         }
         public double EventHorizon(double blackHoleMass)
         {
-            return EventHorizon(blackHoleMass);
+            return mathfunctions.EventHorizon(blackHoleMass);
         }
     }
 }

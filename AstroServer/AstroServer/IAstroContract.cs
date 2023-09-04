@@ -13,5 +13,14 @@ namespace AstroServer
     {
         [OperationContract]
         double StarVelocity(double observedWaveLength, double restWaveLength);
+
+        [OperationContract]
+        double StarDistance(double arcsecondsAngle);
+
+        [OperationContract]
+        double TemperatureInKelvin(double celsius);
+
+        [OperationContract]
+        double EventHorizon(double blackHoleMass);
     }
 }
