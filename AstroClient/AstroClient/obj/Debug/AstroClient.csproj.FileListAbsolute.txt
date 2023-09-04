@@ -1,0 +1,10 @@
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\AstroClient\AstroClient\bin\Debug\AstroClient.exe.config
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\AstroClient\AstroClient\bin\Debug\AstroClient.exe
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\AstroClient\AstroClient\bin\Debug\AstroClient.pdb
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\AstroClient\AstroClient\obj\Debug\AstroClient.csproj.AssemblyReference.cache
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\AstroClient\AstroClient\obj\Debug\AstroClient.Form1.resources
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\AstroClient\AstroClient\obj\Debug\AstroClient.Properties.Resources.resources
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\AstroClient\AstroClient\obj\Debug\AstroClient.csproj.GenerateResource.cache
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\AstroClient\AstroClient\obj\Debug\AstroClient.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\AstroClient\AstroClient\obj\Debug\AstroClient.exe
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\AstroClient\AstroClient\obj\Debug\AstroClient.pdb
