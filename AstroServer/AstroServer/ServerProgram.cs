@@ -9,7 +9,7 @@ using AstroMath;
 
 namespace AstroServer
 {
-    internal class Program
+    internal class ServerProgram
     {
         static void Main(string[] args)
         {

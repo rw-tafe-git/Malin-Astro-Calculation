@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace AstroClient
 {
-    internal static class Program
+    internal static class ClientProgram
     {
         /// <summary>
         /// The main entry point for the application.
@@ -16,7 +16,7 @@ namespace AstroClient
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new ClientForm());
         }
     }
 }

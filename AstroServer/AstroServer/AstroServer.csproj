@@ -53,7 +53,7 @@
   <ItemGroup>
     <Compile Include="ServerLMP.cs" />
     <Compile Include="IAstroContract.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="ServerProgram.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -9,18 +9,25 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.ServiceModel;
 
 namespace AstroClient
 {
-    public partial class Form1 : Form
+    public partial class ClientForm : Form
     {
-        public Form1()
+        public ClientForm()
         {
             InitializeComponent();
+
+            string address = "net.pipe://localhost/pipespacemaths";
+            NetNamedPipeBinding binding = new NetNamedPipeBinding(NetNamedPipeSecurityMode.None);
+            EndpointAddress ep = new EndpointAddress(address);
+            IAstroContract channel = ChannelFactory<IAstroContract>.CreateChannel(binding, ep);
         }
 
         private void ButtonEnglish_Click(object sender, EventArgs e)
         {
+            
             ChangeLanguage("English");
         }
 
@@ -48,17 +55,17 @@ namespace AstroClient
                     break;
                 case "French":
                     Thread.CurrentThread.CurrentUICulture = new CultureInfo("fr-FR");
-                    ButtonEnglish.Enabled = false;
-                    ButtonFrench.Enabled = true;
+                    ButtonEnglish.Enabled = true;
+                    ButtonFrench.Enabled = false;
                     ButtonGerman.Enabled = true;
                     //this.BackgroundImage = Properties.Resources.Flag_of_US;
 
                     break;
                 case "German":
                     Thread.CurrentThread.CurrentUICulture = new CultureInfo("de-DE");
-                    ButtonEnglish.Enabled = false;
+                    ButtonEnglish.Enabled = true;
                     ButtonFrench.Enabled = true;
-                    ButtonGerman.Enabled = true;
+                    ButtonGerman.Enabled = false;
                     //this.BackgroundImage = Properties.Resources.Flag_of_US;
 
                     break;
