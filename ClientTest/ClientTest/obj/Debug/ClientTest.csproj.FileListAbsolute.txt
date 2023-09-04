@@ -5,3 +5,6 @@ C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\ClientTest\ClientTes
 C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\ClientTest\ClientTest\obj\Debug\ClientTest.csproj.CoreCompileInputs.cache
 C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\ClientTest\ClientTest\obj\Debug\ClientTest.exe
 C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\ClientTest\ClientTest\obj\Debug\ClientTest.pdb
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\ClientTest\ClientTest\bin\Debug\System.ServiceModel.Primitives.dll
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\ClientTest\ClientTest\bin\Debug\System.ServiceModel.Primitives.pdb
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\ClientTest\ClientTest\obj\Debug\ClientTest.csproj.CopyComplete

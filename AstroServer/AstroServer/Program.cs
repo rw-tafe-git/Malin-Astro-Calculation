@@ -22,7 +22,7 @@ namespace AstroServer
 
             AstroMathFunctions mathfunctions = new AstroMathFunctions();
 
-            Console.WriteLine("Server started");
+            Console.WriteLine("ServiceHost is running. Press <<Return>> to Exit");
 
             Console.ReadLine();
         }
