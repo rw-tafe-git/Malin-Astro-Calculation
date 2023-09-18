@@ -19,9 +19,19 @@ namespace AstroClient
         // Create a channel reference
         IAstroContract channel;
 
+        private System.Windows.Forms.FontDialog fontDialog1;
+        private System.Windows.Forms.ColorDialog colourDialog1;
+
+        private bool themeMenuOpen = true;
+        private bool languageMenuOpen = true;
+        private bool coloursMenuOpen = true;
+
         public ClientForm()
         {
             InitializeComponent();
+
+            this.fontDialog1 = new System.Windows.Forms.FontDialog();
+            this.colourDialog1 = new System.Windows.Forms.ColorDialog();
 
             //Initialise the service model channel
             string address = "net.pipe://localhost/pipespacemaths";
@@ -44,7 +54,7 @@ namespace AstroClient
             double velocity = channel.StarVelocity(double.Parse(InputObserved.Text), double.Parse(InputRest.Text));
 
             //string[] data = new string[] { "velocity", "distance", "kelvin", "horizon" };
-            string[] data = new string[] { velocity.ToString("0.00 m/s"), "", "", "" };
+            string[] data = new string[] { InputName.Text, velocity.ToString("0.00 m/s"), "", "", "" };
             Display(data);
         }
 
@@ -52,7 +62,7 @@ namespace AstroClient
         {
             double starDistance = channel.StarDistance(double.Parse(InputParallax.Text));
 
-            string[] data = new string[] { "", starDistance.ToString(), "", "" };
+            string[] data = new string[] { InputName.Text, "", starDistance.ToString(), "", "" };
             Display(data);
         }
 
@@ -60,7 +70,7 @@ namespace AstroClient
         {
             double temperature = channel.TemperatureInKelvin(double.Parse(InputCelsius.Text));
 
-            string[] data = new string[] { "", "", temperature.ToString(), "" };
+            string[] data = new string[] { InputName.Text, "", "", temperature.ToString(), "" };
             Display(data);
         }
 
@@ -68,7 +78,7 @@ namespace AstroClient
         {
             double eventHorizon = channel.EventHorizon(double.Parse(InputMass.Text));
 
-            string[] data = new string[] { "", "", "", eventHorizon.ToString() };
+            string[] data = new string[] { InputName.Text, "", "", "", eventHorizon.ToString() };
             Display(data);
         }
 
@@ -91,13 +101,9 @@ namespace AstroClient
         private void TextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.')) 
-            {
                 e.Handled = true;
-            }
             if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
-            {
                 e.Handled = true;
-            }
         }
 
         private void ChangeLanguage(string language)
@@ -109,7 +115,7 @@ namespace AstroClient
                     ButtonEnglish.Enabled = false;
                     ButtonFrench.Enabled = true;
                     ButtonGerman.Enabled = true;
-                    this.BackgroundImage = Properties.Resources.flag_english;
+                    //this.BackgroundImage = Properties.Resources.flag_english;
 
                     break;
                 case "French":
@@ -117,7 +123,7 @@ namespace AstroClient
                     ButtonEnglish.Enabled = true;
                     ButtonFrench.Enabled = false;
                     ButtonGerman.Enabled = true;
-                    this.BackgroundImage = Properties.Resources.flag_french;
+                    //this.BackgroundImage = Properties.Resources.flag_french;
 
                     break;
                 case "German":
@@ -125,7 +131,7 @@ namespace AstroClient
                     ButtonEnglish.Enabled = true;
                     ButtonFrench.Enabled = true;
                     ButtonGerman.Enabled = false;
-                    this.BackgroundImage = Properties.Resources.flag_german;
+                    //this.BackgroundImage = Properties.Resources.flag_german;
 
                     break;
             }
@@ -137,6 +143,82 @@ namespace AstroClient
         }
 
         private void MenuDark_Click(object sender, EventArgs e)
+        {
+            BackColor = SystemColors.InactiveCaption;
+        }
+
+        private void ButtonCustom_Click(object sender, EventArgs e)
+        {
+            if (colourDialog1.ShowDialog() != DialogResult.Cancel)
+            {
+                this.BackColor = colourDialog1.Color;
+            }
+        }
+
+        private void ButtonFontColour_Click(object sender, EventArgs e)
+        {
+            if (colourDialog1.ShowDialog() != DialogResult.Cancel)
+            {
+                foreach (Label label in this.Controls.OfType<Label>()) 
+                    label.ForeColor = colourDialog1.Color;
+                foreach (GroupBox gb in this.Controls.OfType<GroupBox>())
+                {
+                    gb.ForeColor = colourDialog1.Color;
+
+                    foreach (Label label in gb.Controls.OfType<Label>())
+                        label.ForeColor = colourDialog1.Color;
+                }
+            }
+        }
+
+        private void ButtonFontStyle_Click(object sender, EventArgs e)
+        {
+            if (fontDialog1.ShowDialog() != DialogResult.Cancel)
+            {
+                foreach (Label label in this.Controls.OfType<Label>())
+                    label.Font = fontDialog1.Font;
+                foreach (GroupBox gb in this.Controls.OfType<GroupBox>())
+                {
+                    gb.Font = fontDialog1.Font;
+
+                    foreach (Label label in gb.Controls.OfType<Label>())
+                        label.Font = fontDialog1.Font;
+                }
+            }
+        }
+
+        private void ButtonTheme_Click(object sender, EventArgs e)
+        {
+            themeMenuOpen = !themeMenuOpen;
+
+            ButtonLight.Visible = themeMenuOpen;
+            ButtonDark.Visible = themeMenuOpen;
+            ButtonCustom.Visible = themeMenuOpen;
+        }
+
+        private void ButtonLanguage_Click(object sender, EventArgs e)
+        {
+            languageMenuOpen = !languageMenuOpen;
+
+            ButtonEnglish.Visible = languageMenuOpen;
+            ButtonFrench.Visible = languageMenuOpen;
+            ButtonGerman.Visible = languageMenuOpen;
+        }
+
+        private void ButtonColours_Click(object sender, EventArgs e)
+        {
+            coloursMenuOpen = !coloursMenuOpen;
+
+            ButtonFontColour.Visible = coloursMenuOpen;
+            ButtonFontStyle.Visible = coloursMenuOpen;
+        }
+
+        private void ButtonLight_Click(object sender, EventArgs e)
+        {
+            BackColor = SystemColors.Control;
+        }
+
+        private void ButtonDark_Click(object sender, EventArgs e)
         {
             BackColor = SystemColors.InactiveCaption;
         }

@@ -35,6 +35,7 @@
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -66,6 +67,16 @@
             this.MenuCustom = new System.Windows.Forms.MenuItem();
             this.MenuButtonColour = new System.Windows.Forms.MenuItem();
             this.MenuLabelColour = new System.Windows.Forms.MenuItem();
+            this.label7 = new System.Windows.Forms.Label();
+            this.InputName = new System.Windows.Forms.TextBox();
+            this.ButtonTheme = new System.Windows.Forms.Button();
+            this.ButtonLanguage = new System.Windows.Forms.Button();
+            this.ButtonColours = new System.Windows.Forms.Button();
+            this.ButtonFontColour = new System.Windows.Forms.Button();
+            this.ButtonFontStyle = new System.Windows.Forms.Button();
+            this.ButtonDark = new System.Windows.Forms.Button();
+            this.ButtonLight = new System.Windows.Forms.Button();
+            this.ButtonCustom = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -79,7 +90,8 @@
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3,
-            this.columnHeader4});
+            this.columnHeader4,
+            this.columnHeader5});
             this.ListViewOutput.HideSelection = false;
             resources.ApplyResources(this.ListViewOutput, "ListViewOutput");
             this.ListViewOutput.Name = "ListViewOutput";
@@ -101,6 +113,10 @@
             // columnHeader4
             // 
             resources.ApplyResources(this.columnHeader4, "columnHeader4");
+            // 
+            // columnHeader5
+            // 
+            resources.ApplyResources(this.columnHeader5, "columnHeader5");
             // 
             // groupBox1
             // 
@@ -310,11 +326,87 @@
             this.MenuLabelColour.Index = 2;
             resources.ApplyResources(this.MenuLabelColour, "MenuLabelColour");
             // 
+            // label7
+            // 
+            resources.ApplyResources(this.label7, "label7");
+            this.label7.Name = "label7";
+            // 
+            // InputName
+            // 
+            resources.ApplyResources(this.InputName, "InputName");
+            this.InputName.Name = "InputName";
+            // 
+            // ButtonTheme
+            // 
+            resources.ApplyResources(this.ButtonTheme, "ButtonTheme");
+            this.ButtonTheme.Name = "ButtonTheme";
+            this.ButtonTheme.UseVisualStyleBackColor = true;
+            this.ButtonTheme.Click += new System.EventHandler(this.ButtonTheme_Click);
+            // 
+            // ButtonLanguage
+            // 
+            resources.ApplyResources(this.ButtonLanguage, "ButtonLanguage");
+            this.ButtonLanguage.Name = "ButtonLanguage";
+            this.ButtonLanguage.UseVisualStyleBackColor = true;
+            this.ButtonLanguage.Click += new System.EventHandler(this.ButtonLanguage_Click);
+            // 
+            // ButtonColours
+            // 
+            resources.ApplyResources(this.ButtonColours, "ButtonColours");
+            this.ButtonColours.Name = "ButtonColours";
+            this.ButtonColours.UseVisualStyleBackColor = true;
+            this.ButtonColours.Click += new System.EventHandler(this.ButtonColours_Click);
+            // 
+            // ButtonFontColour
+            // 
+            resources.ApplyResources(this.ButtonFontColour, "ButtonFontColour");
+            this.ButtonFontColour.Name = "ButtonFontColour";
+            this.ButtonFontColour.UseVisualStyleBackColor = true;
+            this.ButtonFontColour.Click += new System.EventHandler(this.ButtonFontColour_Click);
+            // 
+            // ButtonFontStyle
+            // 
+            resources.ApplyResources(this.ButtonFontStyle, "ButtonFontStyle");
+            this.ButtonFontStyle.Name = "ButtonFontStyle";
+            this.ButtonFontStyle.UseVisualStyleBackColor = true;
+            this.ButtonFontStyle.Click += new System.EventHandler(this.ButtonFontStyle_Click);
+            // 
+            // ButtonDark
+            // 
+            this.ButtonDark.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.ButtonDark.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            resources.ApplyResources(this.ButtonDark, "ButtonDark");
+            this.ButtonDark.Name = "ButtonDark";
+            this.ButtonDark.UseVisualStyleBackColor = false;
+            this.ButtonDark.Click += new System.EventHandler(this.ButtonDark_Click);
+            // 
+            // ButtonLight
+            // 
+            this.ButtonLight.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            resources.ApplyResources(this.ButtonLight, "ButtonLight");
+            this.ButtonLight.Name = "ButtonLight";
+            this.ButtonLight.UseVisualStyleBackColor = false;
+            this.ButtonLight.Click += new System.EventHandler(this.ButtonLight_Click);
+            // 
+            // ButtonCustom
+            // 
+            resources.ApplyResources(this.ButtonCustom, "ButtonCustom");
+            this.ButtonCustom.Name = "ButtonCustom";
+            this.ButtonCustom.UseVisualStyleBackColor = true;
+            this.ButtonCustom.Click += new System.EventHandler(this.ButtonCustom_Click);
+            // 
             // ClientForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.ButtonGerman);
+            this.Controls.Add(this.ButtonTheme);
+            this.Controls.Add(this.ButtonLanguage);
+            this.Controls.Add(this.ButtonColours);
+            this.Controls.Add(this.ButtonDark);
+            this.Controls.Add(this.ButtonLight);
+            this.Controls.Add(this.ButtonFontColour);
+            this.Controls.Add(this.InputName);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.ButtonFrench);
             this.Controls.Add(this.ButtonEnglish);
             this.Controls.Add(this.groupBox4);
@@ -322,6 +414,9 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.ListViewOutput);
+            this.Controls.Add(this.ButtonCustom);
+            this.Controls.Add(this.ButtonGerman);
+            this.Controls.Add(this.ButtonFontStyle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Menu = this.MainMenu;
@@ -336,6 +431,7 @@
             this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.InputMass)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -377,6 +473,17 @@
         private System.Windows.Forms.MenuItem MenuCustom;
         private System.Windows.Forms.MenuItem MenuButtonColour;
         private System.Windows.Forms.MenuItem MenuLabelColour;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox InputName;
+        private System.Windows.Forms.Button ButtonTheme;
+        private System.Windows.Forms.Button ButtonLanguage;
+        private System.Windows.Forms.Button ButtonColours;
+        private System.Windows.Forms.Button ButtonFontColour;
+        private System.Windows.Forms.Button ButtonFontStyle;
+        private System.Windows.Forms.Button ButtonDark;
+        private System.Windows.Forms.Button ButtonLight;
+        private System.Windows.Forms.Button ButtonCustom;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
     }
 }
 
