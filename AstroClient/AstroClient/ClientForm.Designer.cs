@@ -77,6 +77,7 @@
             this.ButtonDark = new System.Windows.Forms.Button();
             this.ButtonLight = new System.Windows.Forms.Button();
             this.ButtonCustom = new System.Windows.Forms.Button();
+            this.ButtonColour = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -303,18 +304,19 @@
             // 
             this.MenuLight.Index = 0;
             resources.ApplyResources(this.MenuLight, "MenuLight");
-            this.MenuLight.Click += new System.EventHandler(this.MenuLight_Click);
+            this.MenuLight.Click += new System.EventHandler(this.ButtonLight_Click);
             // 
             // MenuDark
             // 
             this.MenuDark.Index = 1;
             resources.ApplyResources(this.MenuDark, "MenuDark");
-            this.MenuDark.Click += new System.EventHandler(this.MenuDark_Click);
+            this.MenuDark.Click += new System.EventHandler(this.ButtonDark_Click);
             // 
             // MenuCustom
             // 
             this.MenuCustom.Index = 2;
             resources.ApplyResources(this.MenuCustom, "MenuCustom");
+            this.MenuCustom.Click += new System.EventHandler(this.ButtonCustom_Click);
             // 
             // MenuButtonColour
             // 
@@ -374,7 +376,6 @@
             // ButtonDark
             // 
             this.ButtonDark.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ButtonDark.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             resources.ApplyResources(this.ButtonDark, "ButtonDark");
             this.ButtonDark.Name = "ButtonDark";
             this.ButtonDark.UseVisualStyleBackColor = false;
@@ -394,6 +395,13 @@
             this.ButtonCustom.Name = "ButtonCustom";
             this.ButtonCustom.UseVisualStyleBackColor = true;
             this.ButtonCustom.Click += new System.EventHandler(this.ButtonCustom_Click);
+            // 
+            // ButtonColour
+            // 
+            resources.ApplyResources(this.ButtonColour, "ButtonColour");
+            this.ButtonColour.Name = "ButtonColour";
+            this.ButtonColour.UseVisualStyleBackColor = true;
+            this.ButtonColour.Click += new System.EventHandler(this.ButtonColour_Click);
             // 
             // ClientForm
             // 
@@ -417,6 +425,7 @@
             this.Controls.Add(this.ButtonCustom);
             this.Controls.Add(this.ButtonGerman);
             this.Controls.Add(this.ButtonFontStyle);
+            this.Controls.Add(this.ButtonColour);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Menu = this.MainMenu;
@@ -484,6 +493,7 @@
         private System.Windows.Forms.Button ButtonLight;
         private System.Windows.Forms.Button ButtonCustom;
         private System.Windows.Forms.ColumnHeader columnHeader5;
+        private System.Windows.Forms.Button ButtonColour;
     }
 }
 

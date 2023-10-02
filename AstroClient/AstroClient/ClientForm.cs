@@ -147,11 +147,43 @@ namespace AstroClient
             BackColor = SystemColors.InactiveCaption;
         }
 
+        private void ButtonColour_Click(object sender, EventArgs e)
+        {
+            if (colourDialog1.ShowDialog() != DialogResult.Cancel)
+            {
+                Color myColor = colourDialog1.Color;
+
+                foreach (Button label in this.Controls.OfType<Button>())
+                    label.BackColor = myColor;
+                foreach (GroupBox gb in this.Controls.OfType<GroupBox>())
+                {
+                    foreach (Button label in gb.Controls.OfType<Button>())
+                        label.BackColor = myColor;
+                }
+            }
+        }
+
         private void ButtonCustom_Click(object sender, EventArgs e)
         {
             if (colourDialog1.ShowDialog() != DialogResult.Cancel)
             {
-                this.BackColor = colourDialog1.Color;
+                Color myColor = colourDialog1.Color;
+                this.BackColor = myColor;
+                Byte r = (byte)(255 - BackColor.R);
+                Byte g = (byte)(255 - BackColor.G);
+                Byte b = (byte)(255 - BackColor.B);
+
+                myColor = Color.FromArgb(r, g, b);
+
+                foreach (Label label in this.Controls.OfType<Label>())
+                    label.ForeColor = Color.FromArgb(r, g, b);
+                foreach (GroupBox gb in this.Controls.OfType<GroupBox>())
+                {
+                    gb.ForeColor = Color.FromArgb(r, g, b);
+
+                    foreach (Label label in gb.Controls.OfType<Label>())
+                        label.ForeColor = Color.FromArgb(r, g, b);
+                }
             }
         }
 
@@ -209,6 +241,7 @@ namespace AstroClient
         {
             coloursMenuOpen = !coloursMenuOpen;
 
+            ButtonColour.Visible = coloursMenuOpen;
             ButtonFontColour.Visible = coloursMenuOpen;
             ButtonFontStyle.Visible = coloursMenuOpen;
         }
