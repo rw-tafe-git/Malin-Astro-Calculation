@@ -65,8 +65,14 @@
             this.MenuLight = new System.Windows.Forms.MenuItem();
             this.MenuDark = new System.Windows.Forms.MenuItem();
             this.MenuCustom = new System.Windows.Forms.MenuItem();
-            this.MenuButtonColour = new System.Windows.Forms.MenuItem();
-            this.MenuLabelColour = new System.Windows.Forms.MenuItem();
+            this.menuItem3 = new System.Windows.Forms.MenuItem();
+            this.menuItem2 = new System.Windows.Forms.MenuItem();
+            this.menuItem8 = new System.Windows.Forms.MenuItem();
+            this.menuItem9 = new System.Windows.Forms.MenuItem();
+            this.menuItem4 = new System.Windows.Forms.MenuItem();
+            this.menuItem5 = new System.Windows.Forms.MenuItem();
+            this.menuItem6 = new System.Windows.Forms.MenuItem();
+            this.menuItem7 = new System.Windows.Forms.MenuItem();
             this.label7 = new System.Windows.Forms.Label();
             this.InputName = new System.Windows.Forms.TextBox();
             this.ButtonTheme = new System.Windows.Forms.Button();
@@ -87,6 +93,7 @@
             // 
             // ListViewOutput
             // 
+            resources.ApplyResources(this.ListViewOutput, "ListViewOutput");
             this.ListViewOutput.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
@@ -94,7 +101,6 @@
             this.columnHeader4,
             this.columnHeader5});
             this.ListViewOutput.HideSelection = false;
-            resources.ApplyResources(this.ListViewOutput, "ListViewOutput");
             this.ListViewOutput.Name = "ListViewOutput";
             this.ListViewOutput.UseCompatibleStateImageBehavior = false;
             this.ListViewOutput.View = System.Windows.Forms.View.Details;
@@ -121,12 +127,12 @@
             // 
             // groupBox1
             // 
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.InputRest);
             this.groupBox1.Controls.Add(this.InputObserved);
             this.groupBox1.Controls.Add(this.ButtonCalculateVelocity);
-            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
@@ -161,10 +167,10 @@
             // 
             // groupBox2
             // 
+            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.InputParallax);
             this.groupBox2.Controls.Add(this.ButtonCalculateDistance);
-            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
             // 
@@ -188,10 +194,10 @@
             // 
             // groupBox3
             // 
+            resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Controls.Add(this.label4);
             this.groupBox3.Controls.Add(this.InputCelsius);
             this.groupBox3.Controls.Add(this.ButtonCalculateTemperature);
-            resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;
             // 
@@ -215,12 +221,12 @@
             // 
             // groupBox4
             // 
+            resources.ApplyResources(this.groupBox4, "groupBox4");
             this.groupBox4.Controls.Add(this.InputMass);
             this.groupBox4.Controls.Add(this.label6);
             this.groupBox4.Controls.Add(this.label5);
             this.groupBox4.Controls.Add(this.InputMass2);
             this.groupBox4.Controls.Add(this.ButtonCalculateHorizon);
-            resources.ApplyResources(this.groupBox4, "groupBox4");
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.TabStop = false;
             // 
@@ -255,24 +261,24 @@
             // 
             // ButtonGerman
             // 
-            this.ButtonGerman.BackgroundImage = global::AstroClient.Properties.Resources.flag_german;
             resources.ApplyResources(this.ButtonGerman, "ButtonGerman");
+            this.ButtonGerman.BackgroundImage = global::AstroClient.Properties.Resources.flag_german;
             this.ButtonGerman.Name = "ButtonGerman";
             this.ButtonGerman.UseVisualStyleBackColor = true;
             this.ButtonGerman.Click += new System.EventHandler(this.ButtonGerman_Click);
             // 
             // ButtonFrench
             // 
-            this.ButtonFrench.BackgroundImage = global::AstroClient.Properties.Resources.flag_french;
             resources.ApplyResources(this.ButtonFrench, "ButtonFrench");
+            this.ButtonFrench.BackgroundImage = global::AstroClient.Properties.Resources.flag_french;
             this.ButtonFrench.Name = "ButtonFrench";
             this.ButtonFrench.UseVisualStyleBackColor = true;
             this.ButtonFrench.Click += new System.EventHandler(this.ButtonFrench_Click);
             // 
             // ButtonEnglish
             // 
-            this.ButtonEnglish.BackgroundImage = global::AstroClient.Properties.Resources.flag_english;
             resources.ApplyResources(this.ButtonEnglish, "ButtonEnglish");
+            this.ButtonEnglish.BackgroundImage = global::AstroClient.Properties.Resources.flag_english;
             this.ButtonEnglish.Name = "ButtonEnglish";
             this.ButtonEnglish.UseVisualStyleBackColor = true;
             this.ButtonEnglish.Click += new System.EventHandler(this.ButtonEnglish_Click);
@@ -281,52 +287,97 @@
             // 
             this.MainMenu.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
             this.menuItem1});
+            resources.ApplyResources(this.MainMenu, "MainMenu");
             // 
             // menuItem1
             // 
+            resources.ApplyResources(this.menuItem1, "menuItem1");
             this.menuItem1.Index = 0;
             this.menuItem1.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
             this.MenuBackgroundColour,
-            this.MenuButtonColour,
-            this.MenuLabelColour});
-            resources.ApplyResources(this.menuItem1, "menuItem1");
+            this.menuItem3,
+            this.menuItem4});
             // 
             // MenuBackgroundColour
             // 
+            resources.ApplyResources(this.MenuBackgroundColour, "MenuBackgroundColour");
             this.MenuBackgroundColour.Index = 0;
             this.MenuBackgroundColour.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
             this.MenuLight,
             this.MenuDark,
             this.MenuCustom});
-            resources.ApplyResources(this.MenuBackgroundColour, "MenuBackgroundColour");
             // 
             // MenuLight
             // 
-            this.MenuLight.Index = 0;
             resources.ApplyResources(this.MenuLight, "MenuLight");
+            this.MenuLight.Index = 0;
             this.MenuLight.Click += new System.EventHandler(this.ButtonLight_Click);
             // 
             // MenuDark
             // 
-            this.MenuDark.Index = 1;
             resources.ApplyResources(this.MenuDark, "MenuDark");
+            this.MenuDark.Index = 1;
             this.MenuDark.Click += new System.EventHandler(this.ButtonDark_Click);
             // 
             // MenuCustom
             // 
-            this.MenuCustom.Index = 2;
             resources.ApplyResources(this.MenuCustom, "MenuCustom");
+            this.MenuCustom.Index = 2;
             this.MenuCustom.Click += new System.EventHandler(this.ButtonCustom_Click);
             // 
-            // MenuButtonColour
+            // menuItem3
             // 
-            this.MenuButtonColour.Index = 1;
-            resources.ApplyResources(this.MenuButtonColour, "MenuButtonColour");
+            resources.ApplyResources(this.menuItem3, "menuItem3");
+            this.menuItem3.Index = 1;
+            this.menuItem3.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+            this.menuItem2,
+            this.menuItem8,
+            this.menuItem9});
             // 
-            // MenuLabelColour
+            // menuItem2
             // 
-            this.MenuLabelColour.Index = 2;
-            resources.ApplyResources(this.MenuLabelColour, "MenuLabelColour");
+            resources.ApplyResources(this.menuItem2, "menuItem2");
+            this.menuItem2.Index = 0;
+            this.menuItem2.Click += new System.EventHandler(this.ButtonEnglish_Click);
+            // 
+            // menuItem8
+            // 
+            resources.ApplyResources(this.menuItem8, "menuItem8");
+            this.menuItem8.Index = 1;
+            this.menuItem8.Click += new System.EventHandler(this.ButtonFrench_Click);
+            // 
+            // menuItem9
+            // 
+            resources.ApplyResources(this.menuItem9, "menuItem9");
+            this.menuItem9.Index = 2;
+            this.menuItem9.Click += new System.EventHandler(this.ButtonGerman_Click);
+            // 
+            // menuItem4
+            // 
+            resources.ApplyResources(this.menuItem4, "menuItem4");
+            this.menuItem4.Index = 2;
+            this.menuItem4.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+            this.menuItem5,
+            this.menuItem6,
+            this.menuItem7});
+            // 
+            // menuItem5
+            // 
+            resources.ApplyResources(this.menuItem5, "menuItem5");
+            this.menuItem5.Index = 0;
+            this.menuItem5.Click += new System.EventHandler(this.ButtonColour_Click);
+            // 
+            // menuItem6
+            // 
+            resources.ApplyResources(this.menuItem6, "menuItem6");
+            this.menuItem6.Index = 1;
+            this.menuItem6.Click += new System.EventHandler(this.ButtonFontColour_Click);
+            // 
+            // menuItem7
+            // 
+            resources.ApplyResources(this.menuItem7, "menuItem7");
+            this.menuItem7.Index = 2;
+            this.menuItem7.Click += new System.EventHandler(this.ButtonFontStyle_Click);
             // 
             // label7
             // 
@@ -375,16 +426,16 @@
             // 
             // ButtonDark
             // 
-            this.ButtonDark.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             resources.ApplyResources(this.ButtonDark, "ButtonDark");
+            this.ButtonDark.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ButtonDark.Name = "ButtonDark";
             this.ButtonDark.UseVisualStyleBackColor = false;
             this.ButtonDark.Click += new System.EventHandler(this.ButtonDark_Click);
             // 
             // ButtonLight
             // 
-            this.ButtonLight.BackColor = System.Drawing.SystemColors.ControlLightLight;
             resources.ApplyResources(this.ButtonLight, "ButtonLight");
+            this.ButtonLight.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ButtonLight.Name = "ButtonLight";
             this.ButtonLight.UseVisualStyleBackColor = false;
             this.ButtonLight.Click += new System.EventHandler(this.ButtonLight_Click);
@@ -480,8 +531,6 @@
         private System.Windows.Forms.MenuItem MenuLight;
         private System.Windows.Forms.MenuItem MenuDark;
         private System.Windows.Forms.MenuItem MenuCustom;
-        private System.Windows.Forms.MenuItem MenuButtonColour;
-        private System.Windows.Forms.MenuItem MenuLabelColour;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox InputName;
         private System.Windows.Forms.Button ButtonTheme;
@@ -494,6 +543,14 @@
         private System.Windows.Forms.Button ButtonCustom;
         private System.Windows.Forms.ColumnHeader columnHeader5;
         private System.Windows.Forms.Button ButtonColour;
+        private System.Windows.Forms.MenuItem menuItem3;
+        private System.Windows.Forms.MenuItem menuItem2;
+        private System.Windows.Forms.MenuItem menuItem8;
+        private System.Windows.Forms.MenuItem menuItem9;
+        private System.Windows.Forms.MenuItem menuItem4;
+        private System.Windows.Forms.MenuItem menuItem5;
+        private System.Windows.Forms.MenuItem menuItem6;
+        private System.Windows.Forms.MenuItem menuItem7;
     }
 }
 

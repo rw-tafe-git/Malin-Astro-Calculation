@@ -117,7 +117,137 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="button1.Text" xml:space="preserve">
-    <value>Test</value>
+  <data name="columnHeader2.Text" xml:space="preserve">
+    <value>Sternengeschwindigkeit</value>
+  </data>
+  <data name="columnHeader3.Text" xml:space="preserve">
+    <value>Sternentfernung</value>
+  </data>
+  <data name="columnHeader5.Text" xml:space="preserve">
+    <value>Ereignishorizont</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Sternengeschwindigkeit</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 13</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Ausruhen</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 13</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Beobachtet</value>
+  </data>
+  <data name="ButtonCalculateVelocity.Text" xml:space="preserve">
+    <value>Berechnung</value>
+  </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>Startdistanz</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 13</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Parallaxenwinkel</value>
+  </data>
+  <data name="ButtonCalculateDistance.Text" xml:space="preserve">
+    <value>Berechnung</value>
+  </data>
+  <data name="groupBox3.Text" xml:space="preserve">
+    <value>Temperatur</value>
+  </data>
+  <data name="ButtonCalculateTemperature.Text" xml:space="preserve">
+    <value>Berechnung</value>
+  </data>
+  <data name="groupBox4.Text" xml:space="preserve">
+    <value>Ereignishorizont</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 13</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Masse in kg</value>
+  </data>
+  <data name="ButtonCalculateHorizon.Text" xml:space="preserve">
+    <value>Berechnung</value>
+  </data>
+  <data name="ButtonGerman.Text" xml:space="preserve">
+    <value>Deutsch</value>
+  </data>
+  <data name="ButtonFrench.Text" xml:space="preserve">
+    <value>Französisch</value>
+  </data>
+  <data name="ButtonEnglish.Text" xml:space="preserve">
+    <value>Englisch</value>
+  </data>
+  <data name="menuItem1.Text" xml:space="preserve">
+    <value>Sicht</value>
+  </data>
+  <data name="MenuBackgroundColour.Text" xml:space="preserve">
+    <value>Thema</value>
+  </data>
+  <data name="MenuLight.Text" xml:space="preserve">
+    <value>Licht</value>
+  </data>
+  <data name="MenuDark.Text" xml:space="preserve">
+    <value>Dunkel</value>
+  </data>
+  <data name="MenuCustom.Text" xml:space="preserve">
+    <value>Brauch</value>
+  </data>
+  <data name="menuItem3.Text" xml:space="preserve">
+    <value>Sprache</value>
+  </data>
+  <data name="menuItem2.Text" xml:space="preserve">
+    <value>Englisch</value>
+  </data>
+  <data name="menuItem8.Text" xml:space="preserve">
+    <value>Französisch</value>
+  </data>
+  <data name="menuItem9.Text" xml:space="preserve">
+    <value>Deutsch</value>
+  </data>
+  <data name="menuItem4.Text" xml:space="preserve">
+    <value>Farben</value>
+  </data>
+  <data name="menuItem5.Text" xml:space="preserve">
+    <value>Tastenfarbe</value>
+  </data>
+  <data name="menuItem6.Text" xml:space="preserve">
+    <value>Schriftfarbe</value>
+  </data>
+  <data name="menuItem7.Text" xml:space="preserve">
+    <value>Schriftstil</value>
+  </data>
+  <data name="ButtonTheme.Text" xml:space="preserve">
+    <value>Thema</value>
+  </data>
+  <data name="ButtonLanguage.Text" xml:space="preserve">
+    <value>Sprache</value>
+  </data>
+  <data name="ButtonColours.Text" xml:space="preserve">
+    <value>Farben</value>
+  </data>
+  <data name="ButtonFontColour.Text" xml:space="preserve">
+    <value>Schriftfarbe</value>
+  </data>
+  <data name="ButtonFontStyle.Text" xml:space="preserve">
+    <value>Schriftstil</value>
+  </data>
+  <data name="ButtonDark.Text" xml:space="preserve">
+    <value>Dunkel</value>
+  </data>
+  <data name="ButtonLight.Text" xml:space="preserve">
+    <value>Licht</value>
+  </data>
+  <data name="ButtonCustom.Text" xml:space="preserve">
+    <value>Brauch</value>
+  </data>
+  <data name="ButtonColour.Text" xml:space="preserve">
+    <value>Tastenfarbe</value>
   </data>
 </root>

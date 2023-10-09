@@ -16,6 +16,13 @@ namespace AstroClient
 {
     public partial class ClientForm : Form
     {
+        // Student Riley, id 30002737, Date: 23/08/2023
+        // Assessment Task 2
+
+        /// <summary>
+        /// Client application
+        /// </summary>
+
         // Create a channel reference
         IAstroContract channel;
 
@@ -40,6 +47,17 @@ namespace AstroClient
             channel = ChannelFactory<IAstroContract>.CreateChannel(binding, ep);
         }
 
+        private void ClearAllTextBoxes()
+        {
+            foreach (TextBox tb in this.Controls.OfType<TextBox>())
+                tb.Clear();
+            foreach (GroupBox gb in this.Controls.OfType<GroupBox>())
+            {
+                foreach (TextBox tb in gb.Controls.OfType<TextBox>())
+                    tb.Clear();
+            }
+        }
+
         private void Display(string[] data)
         {
             ListViewItem lvi = new ListViewItem(data[0]);
@@ -51,35 +69,67 @@ namespace AstroClient
 
         private void ButtonCalculateVelocity_Click(object sender, EventArgs e)
         {
-            double velocity = channel.StarVelocity(double.Parse(InputObserved.Text), double.Parse(InputRest.Text));
+            try
+            {
+                double velocity = channel.StarVelocity(double.Parse(InputObserved.Text), double.Parse(InputRest.Text));
 
-            //string[] data = new string[] { "velocity", "distance", "kelvin", "horizon" };
-            string[] data = new string[] { InputName.Text, velocity.ToString("0.00 m/s"), "", "", "" };
-            Display(data);
+                //string[] data = new string[] { "velocity", "distance", "kelvin", "horizon" };
+                string[] data = new string[] { InputName.Text, velocity.ToString("0.00 m/s"), "", "", "" };
+                Display(data);
+                ClearAllTextBoxes();
+            }
+            catch
+            {
+                MessageBox.Show("Failed to do calculation, make sure the server is running and that all required fields are filled", "Calculation Error");
+            }
         }
 
         private void ButtonCalculateDistance_Click(object sender, EventArgs e)
         {
-            double starDistance = channel.StarDistance(double.Parse(InputParallax.Text));
+            try
+            {
+                double starDistance = channel.StarDistance(double.Parse(InputParallax.Text));
 
-            string[] data = new string[] { InputName.Text, "", starDistance.ToString(), "", "" };
-            Display(data);
+                string[] data = new string[] { InputName.Text, "", starDistance.ToString(), "", "" };
+                Display(data);
+                ClearAllTextBoxes();
+            }
+            catch
+            {
+                MessageBox.Show("Failed to do calculation, make sure the server is running and that all required fields are filled", "Calculation Error");
+            }
         }
 
         private void ButtonCalculateTemperature_Click(object sender, EventArgs e)
         {
-            double temperature = channel.TemperatureInKelvin(double.Parse(InputCelsius.Text));
+            try
+            {
+                double temperature = channel.TemperatureInKelvin(double.Parse(InputCelsius.Text));
 
-            string[] data = new string[] { InputName.Text, "", "", temperature.ToString(), "" };
-            Display(data);
+                string[] data = new string[] { InputName.Text, "", "", temperature.ToString(), "" };
+                Display(data);
+                ClearAllTextBoxes();
+            }
+            catch
+            {
+                MessageBox.Show("Failed to do calculation, make sure the server is running and that all required fields are filled", "Calculation Error");
+            }
         }
 
         private void ButtonCalculateHorizon_Click(object sender, EventArgs e)
         {
-            double eventHorizon = channel.EventHorizon(double.Parse(InputMass.Text));
+            try
+            {
+                double eventHorizon = channel.EventHorizon(double.Parse(InputMass.Text));
 
-            string[] data = new string[] { InputName.Text, "", "", "", eventHorizon.ToString() };
-            Display(data);
+                string[] data = new string[] { InputName.Text, "", "", "", eventHorizon.ToString() };
+                Display(data);
+                ClearAllTextBoxes();
+            }
+            catch
+            {
+                MessageBox.Show("Failed to do calculation, make sure the server is running and that all required fields are filled", "Calculation Error");
+            }
         }
 
         private void ButtonEnglish_Click(object sender, EventArgs e)
@@ -135,6 +185,8 @@ namespace AstroClient
 
                     break;
             }
+            Controls.Clear();
+            InitializeComponent();
         }
 
         private void MenuLight_Click(object sender, EventArgs e)
