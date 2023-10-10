@@ -17,3 +17,4 @@ C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\AstroClient\AstroCli
 C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\AstroClient\AstroClient\obj\Release\AstroClient.csproj.CopyComplete
 C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\AstroClient\AstroClient\obj\Release\AstroClient.exe
 C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\AstroClient\AstroClient\obj\Release\AstroClient.pdb
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\AstroClient\AstroClient\obj\Release\AstroClient.csproj.SuggestedBindingRedirects.cache

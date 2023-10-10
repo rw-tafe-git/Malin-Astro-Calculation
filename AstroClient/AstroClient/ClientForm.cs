@@ -189,14 +189,42 @@ namespace AstroClient
             InitializeComponent();
         }
 
-        private void MenuLight_Click(object sender, EventArgs e)
+        private void ButtonLight_Click(object sender, EventArgs e)
         {
             BackColor = SystemColors.Control;
+
+            foreach (Button button in this.Controls.OfType<Button>())
+                button.UseVisualStyleBackColor = true;
+            foreach (Label label in this.Controls.OfType<Label>())
+                label.ForeColor = SystemColors.ControlText;
+
+            foreach (GroupBox gb in this.Controls.OfType<GroupBox>())
+            {
+                foreach (Button button in gb.Controls.OfType<Button>())
+                    button.UseVisualStyleBackColor = true;
+
+                foreach (Label label in gb.Controls.OfType<Label>())
+                    label.ForeColor = SystemColors.ControlText;
+            }
         }
 
-        private void MenuDark_Click(object sender, EventArgs e)
+        private void ButtonDark_Click(object sender, EventArgs e)
         {
-            BackColor = SystemColors.InactiveCaption;
+            BackColor = SystemColors.ControlDark;
+
+            foreach (Button button in this.Controls.OfType<Button>())
+                button.UseVisualStyleBackColor = true;
+            foreach (Label label in this.Controls.OfType<Label>())
+                label.ForeColor = SystemColors.ControlText;
+
+            foreach (GroupBox gb in this.Controls.OfType<GroupBox>())
+            {
+                foreach (Button button in gb.Controls.OfType<Button>())
+                    button.UseVisualStyleBackColor = true;
+
+                foreach (Label label in gb.Controls.OfType<Label>())
+                    label.ForeColor = SystemColors.ControlText;
+            }
         }
 
         private void ButtonColour_Click(object sender, EventArgs e)
@@ -296,16 +324,6 @@ namespace AstroClient
             ButtonColour.Visible = coloursMenuOpen;
             ButtonFontColour.Visible = coloursMenuOpen;
             ButtonFontStyle.Visible = coloursMenuOpen;
-        }
-
-        private void ButtonLight_Click(object sender, EventArgs e)
-        {
-            BackColor = SystemColors.Control;
-        }
-
-        private void ButtonDark_Click(object sender, EventArgs e)
-        {
-            BackColor = SystemColors.InactiveCaption;
         }
     }
 }

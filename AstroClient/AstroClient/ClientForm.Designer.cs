@@ -55,7 +55,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.InputMass2 = new System.Windows.Forms.TextBox();
-            this.ButtonCalculateHorizon = new System.Windows.Forms.Button();
             this.ButtonGerman = new System.Windows.Forms.Button();
             this.ButtonFrench = new System.Windows.Forms.Button();
             this.ButtonEnglish = new System.Windows.Forms.Button();
@@ -84,6 +83,7 @@
             this.ButtonLight = new System.Windows.Forms.Button();
             this.ButtonCustom = new System.Windows.Forms.Button();
             this.ButtonColour = new System.Windows.Forms.Button();
+            this.ButtonCalculateHorizon = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -93,7 +93,6 @@
             // 
             // ListViewOutput
             // 
-            resources.ApplyResources(this.ListViewOutput, "ListViewOutput");
             this.ListViewOutput.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
@@ -101,6 +100,7 @@
             this.columnHeader4,
             this.columnHeader5});
             this.ListViewOutput.HideSelection = false;
+            resources.ApplyResources(this.ListViewOutput, "ListViewOutput");
             this.ListViewOutput.Name = "ListViewOutput";
             this.ListViewOutput.UseCompatibleStateImageBehavior = false;
             this.ListViewOutput.View = System.Windows.Forms.View.Details;
@@ -127,12 +127,12 @@
             // 
             // groupBox1
             // 
-            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.InputRest);
             this.groupBox1.Controls.Add(this.InputObserved);
             this.groupBox1.Controls.Add(this.ButtonCalculateVelocity);
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
@@ -167,10 +167,10 @@
             // 
             // groupBox2
             // 
-            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.InputParallax);
             this.groupBox2.Controls.Add(this.ButtonCalculateDistance);
+            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
             // 
@@ -194,10 +194,10 @@
             // 
             // groupBox3
             // 
-            resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Controls.Add(this.label4);
             this.groupBox3.Controls.Add(this.InputCelsius);
             this.groupBox3.Controls.Add(this.ButtonCalculateTemperature);
+            resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;
             // 
@@ -221,12 +221,12 @@
             // 
             // groupBox4
             // 
-            resources.ApplyResources(this.groupBox4, "groupBox4");
             this.groupBox4.Controls.Add(this.InputMass);
             this.groupBox4.Controls.Add(this.label6);
             this.groupBox4.Controls.Add(this.label5);
             this.groupBox4.Controls.Add(this.InputMass2);
             this.groupBox4.Controls.Add(this.ButtonCalculateHorizon);
+            resources.ApplyResources(this.groupBox4, "groupBox4");
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.TabStop = false;
             // 
@@ -252,33 +252,26 @@
             this.InputMass2.Name = "InputMass2";
             this.InputMass2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox_KeyPress);
             // 
-            // ButtonCalculateHorizon
-            // 
-            resources.ApplyResources(this.ButtonCalculateHorizon, "ButtonCalculateHorizon");
-            this.ButtonCalculateHorizon.Name = "ButtonCalculateHorizon";
-            this.ButtonCalculateHorizon.UseVisualStyleBackColor = true;
-            this.ButtonCalculateHorizon.Click += new System.EventHandler(this.ButtonCalculateHorizon_Click);
-            // 
             // ButtonGerman
             // 
-            resources.ApplyResources(this.ButtonGerman, "ButtonGerman");
             this.ButtonGerman.BackgroundImage = global::AstroClient.Properties.Resources.flag_german;
+            resources.ApplyResources(this.ButtonGerman, "ButtonGerman");
             this.ButtonGerman.Name = "ButtonGerman";
             this.ButtonGerman.UseVisualStyleBackColor = true;
             this.ButtonGerman.Click += new System.EventHandler(this.ButtonGerman_Click);
             // 
             // ButtonFrench
             // 
-            resources.ApplyResources(this.ButtonFrench, "ButtonFrench");
             this.ButtonFrench.BackgroundImage = global::AstroClient.Properties.Resources.flag_french;
+            resources.ApplyResources(this.ButtonFrench, "ButtonFrench");
             this.ButtonFrench.Name = "ButtonFrench";
             this.ButtonFrench.UseVisualStyleBackColor = true;
             this.ButtonFrench.Click += new System.EventHandler(this.ButtonFrench_Click);
             // 
             // ButtonEnglish
             // 
-            resources.ApplyResources(this.ButtonEnglish, "ButtonEnglish");
             this.ButtonEnglish.BackgroundImage = global::AstroClient.Properties.Resources.flag_english;
+            resources.ApplyResources(this.ButtonEnglish, "ButtonEnglish");
             this.ButtonEnglish.Name = "ButtonEnglish";
             this.ButtonEnglish.UseVisualStyleBackColor = true;
             this.ButtonEnglish.Click += new System.EventHandler(this.ButtonEnglish_Click);
@@ -287,96 +280,95 @@
             // 
             this.MainMenu.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
             this.menuItem1});
-            resources.ApplyResources(this.MainMenu, "MainMenu");
             // 
             // menuItem1
             // 
-            resources.ApplyResources(this.menuItem1, "menuItem1");
             this.menuItem1.Index = 0;
             this.menuItem1.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
             this.MenuBackgroundColour,
             this.menuItem3,
             this.menuItem4});
+            resources.ApplyResources(this.menuItem1, "menuItem1");
             // 
             // MenuBackgroundColour
             // 
-            resources.ApplyResources(this.MenuBackgroundColour, "MenuBackgroundColour");
             this.MenuBackgroundColour.Index = 0;
             this.MenuBackgroundColour.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
             this.MenuLight,
             this.MenuDark,
             this.MenuCustom});
+            resources.ApplyResources(this.MenuBackgroundColour, "MenuBackgroundColour");
             // 
             // MenuLight
             // 
-            resources.ApplyResources(this.MenuLight, "MenuLight");
             this.MenuLight.Index = 0;
+            resources.ApplyResources(this.MenuLight, "MenuLight");
             this.MenuLight.Click += new System.EventHandler(this.ButtonLight_Click);
             // 
             // MenuDark
             // 
-            resources.ApplyResources(this.MenuDark, "MenuDark");
             this.MenuDark.Index = 1;
+            resources.ApplyResources(this.MenuDark, "MenuDark");
             this.MenuDark.Click += new System.EventHandler(this.ButtonDark_Click);
             // 
             // MenuCustom
             // 
-            resources.ApplyResources(this.MenuCustom, "MenuCustom");
             this.MenuCustom.Index = 2;
+            resources.ApplyResources(this.MenuCustom, "MenuCustom");
             this.MenuCustom.Click += new System.EventHandler(this.ButtonCustom_Click);
             // 
             // menuItem3
             // 
-            resources.ApplyResources(this.menuItem3, "menuItem3");
             this.menuItem3.Index = 1;
             this.menuItem3.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
             this.menuItem2,
             this.menuItem8,
             this.menuItem9});
+            resources.ApplyResources(this.menuItem3, "menuItem3");
             // 
             // menuItem2
             // 
-            resources.ApplyResources(this.menuItem2, "menuItem2");
             this.menuItem2.Index = 0;
+            resources.ApplyResources(this.menuItem2, "menuItem2");
             this.menuItem2.Click += new System.EventHandler(this.ButtonEnglish_Click);
             // 
             // menuItem8
             // 
-            resources.ApplyResources(this.menuItem8, "menuItem8");
             this.menuItem8.Index = 1;
+            resources.ApplyResources(this.menuItem8, "menuItem8");
             this.menuItem8.Click += new System.EventHandler(this.ButtonFrench_Click);
             // 
             // menuItem9
             // 
-            resources.ApplyResources(this.menuItem9, "menuItem9");
             this.menuItem9.Index = 2;
+            resources.ApplyResources(this.menuItem9, "menuItem9");
             this.menuItem9.Click += new System.EventHandler(this.ButtonGerman_Click);
             // 
             // menuItem4
             // 
-            resources.ApplyResources(this.menuItem4, "menuItem4");
             this.menuItem4.Index = 2;
             this.menuItem4.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
             this.menuItem5,
             this.menuItem6,
             this.menuItem7});
+            resources.ApplyResources(this.menuItem4, "menuItem4");
             // 
             // menuItem5
             // 
-            resources.ApplyResources(this.menuItem5, "menuItem5");
             this.menuItem5.Index = 0;
+            resources.ApplyResources(this.menuItem5, "menuItem5");
             this.menuItem5.Click += new System.EventHandler(this.ButtonColour_Click);
             // 
             // menuItem6
             // 
-            resources.ApplyResources(this.menuItem6, "menuItem6");
             this.menuItem6.Index = 1;
+            resources.ApplyResources(this.menuItem6, "menuItem6");
             this.menuItem6.Click += new System.EventHandler(this.ButtonFontColour_Click);
             // 
             // menuItem7
             // 
-            resources.ApplyResources(this.menuItem7, "menuItem7");
             this.menuItem7.Index = 2;
+            resources.ApplyResources(this.menuItem7, "menuItem7");
             this.menuItem7.Click += new System.EventHandler(this.ButtonFontStyle_Click);
             // 
             // label7
@@ -426,16 +418,16 @@
             // 
             // ButtonDark
             // 
-            resources.ApplyResources(this.ButtonDark, "ButtonDark");
             this.ButtonDark.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            resources.ApplyResources(this.ButtonDark, "ButtonDark");
             this.ButtonDark.Name = "ButtonDark";
             this.ButtonDark.UseVisualStyleBackColor = false;
             this.ButtonDark.Click += new System.EventHandler(this.ButtonDark_Click);
             // 
             // ButtonLight
             // 
-            resources.ApplyResources(this.ButtonLight, "ButtonLight");
             this.ButtonLight.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            resources.ApplyResources(this.ButtonLight, "ButtonLight");
             this.ButtonLight.Name = "ButtonLight";
             this.ButtonLight.UseVisualStyleBackColor = false;
             this.ButtonLight.Click += new System.EventHandler(this.ButtonLight_Click);
@@ -453,6 +445,13 @@
             this.ButtonColour.Name = "ButtonColour";
             this.ButtonColour.UseVisualStyleBackColor = true;
             this.ButtonColour.Click += new System.EventHandler(this.ButtonColour_Click);
+            // 
+            // ButtonCalculateHorizon
+            // 
+            resources.ApplyResources(this.ButtonCalculateHorizon, "ButtonCalculateHorizon");
+            this.ButtonCalculateHorizon.Name = "ButtonCalculateHorizon";
+            this.ButtonCalculateHorizon.UseVisualStyleBackColor = true;
+            this.ButtonCalculateHorizon.Click += new System.EventHandler(this.ButtonCalculateHorizon_Click);
             // 
             // ClientForm
             // 
@@ -512,7 +511,6 @@
         private System.Windows.Forms.Button ButtonCalculateVelocity;
         private System.Windows.Forms.Button ButtonCalculateDistance;
         private System.Windows.Forms.Button ButtonCalculateTemperature;
-        private System.Windows.Forms.Button ButtonCalculateHorizon;
         private System.Windows.Forms.TextBox InputRest;
         private System.Windows.Forms.TextBox InputObserved;
         private System.Windows.Forms.TextBox InputParallax;
@@ -551,6 +549,7 @@
         private System.Windows.Forms.MenuItem menuItem5;
         private System.Windows.Forms.MenuItem menuItem6;
         private System.Windows.Forms.MenuItem menuItem7;
+        private System.Windows.Forms.Button ButtonCalculateHorizon;
     }
 }
 
