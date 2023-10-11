@@ -1,0 +1,39 @@
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\AstroClient\AstroClient\bin\Release\AstroClient.exe.config
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\AstroClient\AstroClient\bin\Release\AstroClient.exe
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\AstroClient\AstroClient\bin\Release\AstroClient.pdb
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\AstroClient\AstroClient\bin\Release\de-DE\AstroClient.resources.dll
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\AstroClient\AstroClient\bin\Release\fr-FR\AstroClient.resources.dll
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\AstroClient\AstroClient\bin\Release\System.ServiceModel.Primitives.dll
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\AstroClient\AstroClient\bin\Release\System.ServiceModel.Primitives.pdb
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\AstroClient\AstroClient\obj\Release\AstroClient.csproj.AssemblyReference.cache
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\AstroClient\AstroClient\obj\Release\AstroClient.ClientForm.resources
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\AstroClient\AstroClient\obj\Release\AstroClient.Properties.Resources.resources
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\AstroClient\AstroClient\obj\Release\AstroClient.ClientForm.de-DE.resources
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\AstroClient\AstroClient\obj\Release\AstroClient.ClientForm.fr-FR.resources
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\AstroClient\AstroClient\obj\Release\AstroClient.csproj.GenerateResource.cache
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\AstroClient\AstroClient\obj\Release\AstroClient.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\AstroClient\AstroClient\obj\Release\de-DE\AstroClient.resources.dll
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\AstroClient\AstroClient\obj\Release\fr-FR\AstroClient.resources.dll
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\AstroClient\AstroClient\obj\Release\AstroClient.csproj.CopyComplete
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\AstroClient\AstroClient\obj\Release\AstroClient.exe
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\AstroClient\AstroClient\obj\Release\AstroClient.pdb
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\AstroClient\AstroClient\obj\Release\AstroClient.csproj.SuggestedBindingRedirects.cache
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\Source Code\AstroClient\AstroClient\bin\Release\AstroClient.exe.config
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\Source Code\AstroClient\AstroClient\bin\Release\AstroClient.exe
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\Source Code\AstroClient\AstroClient\bin\Release\AstroClient.pdb
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\Source Code\AstroClient\AstroClient\bin\Release\de-DE\AstroClient.resources.dll
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\Source Code\AstroClient\AstroClient\bin\Release\fr-FR\AstroClient.resources.dll
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\Source Code\AstroClient\AstroClient\bin\Release\System.ServiceModel.Primitives.dll
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\Source Code\AstroClient\AstroClient\bin\Release\System.ServiceModel.Primitives.pdb
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\Source Code\AstroClient\AstroClient\obj\Release\AstroClient.csproj.AssemblyReference.cache
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\Source Code\AstroClient\AstroClient\obj\Release\AstroClient.ClientForm.resources
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\Source Code\AstroClient\AstroClient\obj\Release\AstroClient.Properties.Resources.resources
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\Source Code\AstroClient\AstroClient\obj\Release\AstroClient.ClientForm.de-DE.resources
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\Source Code\AstroClient\AstroClient\obj\Release\AstroClient.ClientForm.fr-FR.resources
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\Source Code\AstroClient\AstroClient\obj\Release\AstroClient.csproj.GenerateResource.cache
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\Source Code\AstroClient\AstroClient\obj\Release\AstroClient.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\Source Code\AstroClient\AstroClient\obj\Release\de-DE\AstroClient.resources.dll
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\Source Code\AstroClient\AstroClient\obj\Release\fr-FR\AstroClient.resources.dll
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\Source Code\AstroClient\AstroClient\obj\Release\AstroClient.csproj.CopyComplete
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\Source Code\AstroClient\AstroClient\obj\Release\AstroClient.exe
+C:\Users\Administrator\Source\Repos\Malin-Astro-Calculation\Source Code\AstroClient\AstroClient\obj\Release\AstroClient.pdb
